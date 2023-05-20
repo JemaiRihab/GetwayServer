@@ -12,11 +12,11 @@ public class GatewayServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(GatewayServerApplication.class, args);
     }
-    @Bean
-    public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
-        return builder.routes()
-                .route( r -> r.path("/article/**").uri("http://localhost:9092"))
-                .route( r -> r.path("/stock/**").uri("http://localhost:9090"))
-                .build();
-    }
+//    @Bean
+//    public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
+//        return builder.routes()
+//                .route( r -> r.path("/article/**").uri("http://localhost:9092"))
+//                .route( r -> r.path("/stock/**").uri("http://localhost:9090"))
+//                .build();
+//    }
 }
